@@ -27,6 +27,7 @@ axis(2)
 box()
 legend("topleft", c("Type I error", "Type II error"), fill=c(rgb(0, 0, 1, 0.5), rgb(1, 0, 0, 0.5)))
 ```
+
 ```{r}
 #Use ggplot function to create the graph#
 library(tidyverse)
@@ -51,7 +52,7 @@ ggplot(NULL, aes(x = c(-3, 6), y = c(0, 0.4))) +
         legend.text = element_text(size = 12, margin = margin(l = 10)),
         axis.title = element_blank(),
         axis.text.x = element_text(size = 15),
-        axis.text.y = element_text(size = 12, angle = 90, hjust = 0.5, face = "bold"),
+        axis.text.y = element_text(size = 12, angle = 90, hjust = 0.5, face = "bold", vjust = 3),
         axis.ticks.length = unit(3, "mm")) 
   
 ```
