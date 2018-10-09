@@ -65,15 +65,16 @@ check <- function(a){
   else if(a == 1) paste("The input number is 1 and it's not a prime number.")
   else if(a == 2) paste("It's a prime number.")
   else{
-    for (i in 2:a) {
-      if(a %% i == 0){
-        return(paste("It's not a prime number"))
-      }
-       
-      else
-        return(paste("It's a prime number."))
+    for (i in 2:(a-1)) {
+      if((a %% i) == 0){
+        return(paste("It's not a prime number."))
+        
+      }  
+        
     }
+       return(paste("It's a prime number."))
   }
+ 
 }
 
 check(-1)
@@ -84,6 +85,7 @@ check(4)
 check(5)
 check(3)
 check(6)
+check(99)
 ```
 
 
